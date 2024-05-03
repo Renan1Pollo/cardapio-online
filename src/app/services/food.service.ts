@@ -11,6 +11,7 @@ export class FoodService {
   constructor(private http: HttpClient) {}
 
   postData(data: FoodData): Observable<FoodData> {
+    console.log(data);
     return this.http.post<FoodData>(env.apiUrl, data);
   }
 

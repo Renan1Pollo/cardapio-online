@@ -5,6 +5,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { InputComponent } from '../../shared/input/input.component';
 import { FoodService } from '../../services/food.service';
+import { HttpErrorResponse } from '@angular/common/http';
 
 @Component({
   selector: 'app-create-modal',
@@ -33,7 +34,18 @@ export class CreateModalComponent implements OnInit {
     }
 
     const data = this.getFoodData();
-    this.service.postData(data);
+    this.service.postData(data).subscribe(
+      (response) => {
+        if (response.id != null) {
+          this.closeModal();
+        } else {
+          console.error('Ocorreu um erro ao cadastrar o item.');
+        }
+      },
+      (error: HttpErrorResponse) => {
+        console.error('Erro:', error.message);
+      }
+    );
     this.closeModal();
   }
 
