@@ -1,27 +1,47 @@
-# CardapioOnline
+# Cardápio Digital - Aplicação Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.2.
+Este projeto é um simples protótipo de um Cardápio Digital desenvolvido pela @FernandaKipper no seu [tutorial no YouTube](https://www.youtube.com/@kipperdev). A aplicação foi inicialmente desenvolvida utilizando **React, Typescript e React Query**, e posteriormente foi adaptada e redesenvolvida por mim utilizando **Angular e Typescript**.
+## 💻 Requisitos
 
-## Development server
+Antes de iniciar, você deve ter o Node.js e o npm instalados, além de ter o Angular instalado em sua máquina.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🚀 Instalando
 
-## Code scaffolding
+Primeiro, você deve clonar o projeto na sua máquina, para isso você pode colar o seguinte comando em seu terminal
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```bash
+git clone https://github.com/Renan1Pollo/frontend-cardapio-digital.git
+cd frontend-cardapio-digital
+```
 
-## Build
+Para instalar as dependências, execute o seguinte comando:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+npm install
+```
 
-## Running unit tests
+Por fim, para executar o projeto basta rodar o seguinte:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+ng serve
+```
 
-## Running end-to-end tests
+## 🫂 Integração com Backend
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Para realizar a integração com o Backend, você pode clonar o projeto e rodar localmente.
 
-## Further help
+👉 [Link do repositório](https://github.com/Renan1Pollo/backend-cardapio-digital.git)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Minhas Redes
+
+Instagram: [@renan1pollo](https://www.instagram.com/renan1pollo/) &nbsp;&middot;&nbsp;
+
+Linkedin [@Renan Pollo Benelli](https://www.linkedin.com/in/renan-pollo-benelli-03a64229b/) &nbsp;&middot;&nbsp;
+
+
+## 📝 Licença
+
+Este projeto está licenciado sob a licença MIT. Consulte o arquivo `LICENSE` para obter mais informações.
+
+##  Acknowledgements 
+This project was inspired by the work of [Fernanda-Kipper](https://github.com/Fernanda-Kipper). Special thanks to her for providing the initial idea and inspiration. You can find her on GitHub [here](https://github.com/Fernanda-Kipper).
