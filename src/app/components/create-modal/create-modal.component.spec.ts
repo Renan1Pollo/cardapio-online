@@ -11,7 +11,7 @@ describe('CreateModalComponent', () => {
       imports: [CreateModalComponent]
     })
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(CreateModalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
