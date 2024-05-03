@@ -1,0 +1,12 @@
+<div class="modal-overlay">
+  <div class="modal-body">
+    <button class="btn-close" (click)="closeModal()">X</button>
+    <h2>Cadastre um novo item no cardápio</h2>
+    <form class="input-container">
+      <app-input [form] = "form" label="Titulo" type="text" controlName="title"></app-input>
+      <app-input [form] = "form" label="Preço" type="number" controlName="price"></app-input>
+      <app-input [form] = "form" label="Imagem" type="text" controlName="image"></app-input>
+    </form>
+    <button class="btn-secondary" (click)="printForm()">Cadastrar</button>
+  </div>
+</div>

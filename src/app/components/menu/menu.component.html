@@ -1,6 +1,11 @@
 <div class="container">
   <h1>Cardápio Online</h1>
   <div class="card-grid">
-    <app-card *ngFor="let menuItem of foodData" [menuItem]="menuItem"></app-card>
+    <app-card
+      *ngFor="let menuItem of foodData"
+      [menuItem]="menuItem"
+    ></app-card>
   </div>
+  <button (click)="toggleCreateMode()">Novo</button>
+  <app-create-modal *ngIf="isCreating" (modalClosed)="onModalClosed()"></app-create-modal>
 </div>
